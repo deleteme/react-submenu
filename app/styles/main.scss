@@ -1,0 +1,144 @@
+body {
+  background: #f2f2f2;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+}
+
+.hero-unit {
+  background: #333;
+  padding: 10px 0 0 0;
+}
+
+.search-field {
+  font-size: 24px;
+  margin: 0 0 10px 10px;
+}
+
+.horizontal-menu {
+  width: 100%;
+  overflow: hidden;
+  -webkit-overflow-scrolling: touch;
+}
+
+.horizontal-menu-list {
+  list-style: none;
+  margin: 0;
+  padding: 2px 10px;
+  li {
+    display: inline-block;
+    a {
+      text-decoration: none;
+      display: inline-block;
+      padding: 5px 15px;
+      margin-right: 2px;
+    }
+    &.menu-item-selected a {
+      border-radius: 30px;
+    }
+  }
+}
+
+.menu.menu-dark {
+  .horizontal-menu {
+    background: black;
+  }
+  .horizontal-menu-list {
+    border-top: 1px solid #333;
+    li a {
+      color: #ccc;
+    }
+    li.menu-item-selected a {
+      background: #666;
+      color: white;
+    }
+  }
+}
+
+.menu.menu-light {
+  .horizontal-menu {
+    background: #f2f2f2;
+  }
+  .horizontal-menu-list {
+    border-bottom: 1px solid #e5e5e5;
+    li a {
+      color: #333;
+    }
+    li.menu-item-selected a {
+      // light grey
+      background: #ccc;
+      color: black;
+
+      // blue
+      /*background: #72a3d8;*/
+      /*color: white;*/
+
+      // white
+      /*background: white;*/
+      /*color: black;*/
+
+      /*border-radius: 3px;*/
+      /*box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.2);*/
+    }
+  }
+}
+
+.results {
+  background: #f2f2f2;
+  padding: 10px;
+  line-height: 18px;
+}
+
+.card {
+  background: white;
+  clear: left;
+  cursor: pointer;
+  overflow: hidden;
+  padding: 0;
+  margin: 10px 0 0 0;
+}
+
+.card-content {
+  padding: 10px 0 10px 110px;
+}
+
+.card-thumb {
+  float: left;
+  background: #ccc;
+  height: 100px;
+  width: 100px;
+  img {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+.results-summary {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.clear {
+  clear: both;
+}
+
+@media (max-width: 420px) {
+  .horizontal-menu {
+    overflow: scroll;
+  }
+  .horizontal-menu-list {
+    min-width: 1000px;
+
+    li a {
+      padding: 7px 15px;
+    }
+
+  }
+  .results {
+    padding: 10px 0;
+  }
+}
+
