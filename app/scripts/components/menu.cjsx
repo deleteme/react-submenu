@@ -72,6 +72,8 @@ MenuItem = React.createClass
     selected = @props.item.get 'selected'
     if not @state.isFilter and not selected
       actions.select id
+    else
+      actions.deselect id
     #if not @state.isFilter
       #if selected
         #actions.deselect id
